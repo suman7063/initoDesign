@@ -6,7 +6,7 @@ import Link from "next/link";
 const TopHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="fixed top-0 left-0 w-full  bg-white px-5 sm:px-4 lg:px-0 z-50">
+    <header className="fixed top-0 left-0 w-full  bg-white px-4 lg:px-0 z-50">
       <div className="max-w-[1024px] mx-auto flex justify-between items-center h-[60px] sm:h-20 ">
         <div className="flex items-center">
           {isOpen ? (
@@ -59,23 +59,23 @@ const TopHeader = () => {
             </Link>
           </div>
         )}
-        <div className="flex justify-between items-center text-[#112D35] font-semibold">
+        <div className="flex justify-between items-center text-[#112D35] font-semibold tracking-wide">
           <div className="hidden sm:flex justify-between">
             <Link href="/#">About Us</Link>
-            <Link href="/#" className="sm:ml-4 md:ml-6">
+            <Link href="/#" className="sm:ml-4 md:ml-6 lg:ml-14">
               Blog
             </Link>
-            <Link href="/#" className="sm:ml-4 md:ml-6">
+            <Link href="/#" className="sm:ml-4 md:ml-6 lg:ml-14">
               FAQ
             </Link>
-            <Link href="/#" className="sm:ml-4 md:ml-6">
+            <Link href="/#" className="sm:ml-4 md:ml-6 lg:ml-14">
               Contact Us
             </Link>
-            <Link href="/#" className="sm:ml-4 md:ml-6">
+            <Link href="/#" className="sm:ml-4 md:ml-6 lg:ml-14">
               Careers
             </Link>
           </div>
-          <button className="w-[110px] h-[35px] sm:w-[120px] sm:h-[35px] rounded-full bg-[#1F94AA] text-white text-[13px] sm:text-sm cursor-pointer ml-6">
+          <button className="w-[110px] h-[35px] sm:w-[120px] sm:h-[35px] md:w-[130px] md:h-[40px] rounded-full bg-[#1F94AA] text-white text-[13px] sm:text-sm cursor-pointer ml-6 tracking-wider">
             Try Inito
           </button>
         </div>
