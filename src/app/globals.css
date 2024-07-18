@@ -26,6 +26,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.large-img {
+  position: relative;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -46,5 +50,61 @@ body {
   }
   .midium_text {
     font-size: 12px;
+  }
+}
+
+@media screen and (min-device-width: 640px) and (max-device-width: 768px) {
+  .backgroundPosition {
+    background-position-y: -100px;
+  }
+  .large-img {
+    width: 530px;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .backgroundPosition {
+    background-position-y: -120px;
+  }
+  .large-img {
+    width: 530px;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@media screen and (min-device-width: 1023px) and (max-device-width: 1279px) {
+  .backgroundPosition {
+    background-position-y: -230px;
+  }
+  .large-img {
+    width: 528px;
+    left: 0px;
+    top: -30px;
+  }
+}
+
+@media screen and (min-device-width: 1280px) and (max-device-width: 1535px) {
+  .backgroundPosition {
+    background-position-y: -200px;
+  }
+  .large-img {
+    position: absolute;
+    width: 673px;
+    left: 365px;
+    top: -20px;
+  }
+}
+@media screen and (min-device-width: 1536px) {
+  .backgroundPosition {
+    background-position-y: -520px;
+  }
+  .large-img {
+    position: absolute;
+    left: 300px;
+    top: -90px;
+    width: 850px;
   }
 }

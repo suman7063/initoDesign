@@ -6,8 +6,8 @@ import Link from "next/link";
 const TopHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="fixed top-0 left-0 w-full  bg-white px-4 lg:px-0 z-50">
-      <div className="max-w-[1024px] mx-auto flex justify-between items-center h-[60px] sm:h-20 ">
+    <header className="fixed top-0 left-0 w-full  bg-white z-50">
+      <div className="max-w-[1024px] mx-auto flex justify-between items-center h-[60px] sm:h-20  px-4">
         <div className="flex items-center">
           {isOpen ? (
             <Image
