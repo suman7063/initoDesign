@@ -50,7 +50,7 @@ const PredictAndConfirm = () => {
         <div className="m-4 sm:m-12 lg:m-0 lg:ml-[108px]">
           <h1 className="text-2xl sm:text-4xl text-[#112D35] font-bold  tracking-wider">
             Predict and confirm your ovulation with{" "}
-            <span className="image_as_underline">actual</span> data
+            <span className="image_as_underline mx-2">actual</span> data
           </h1>
           <p className="sm:text-xl lg:text-sm text-[#112D35] font-medium  tracking-widest leading-7  mt-8">
             Unlike most ovulation tests that only give you `yes/no` results,

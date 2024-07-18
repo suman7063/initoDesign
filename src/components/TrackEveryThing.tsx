@@ -55,14 +55,14 @@ const TrackEveryThing = () => {
       {/* middle part of TrackEveryThing */}
       <h1 className="text-center lg:text-left text-2xl sm:text-4xl text-[#112D35] font-bold  tracking-wider w-full px-4 sm:px-0 sm:w-[470px] mx-auto my-16">
         Why Inito is the smarter way to get
-        <span className="image_as_underline ml-2">pregnant</span>
+        <span className="image_as_underline mx-2">pregnant</span>
       </h1>
       <div className="lg:w-[844px] shadow-xl bg-white rounded-3xl mx-auto lg:flex">
         <div className="w-full lg:w-1/2">
           <div className="p-4 sm:p-[25px] lg:p-0 lg:ml-[40px] lg:mr-[20px] lg:my-[20px]  ">
             <h1 className="text-2xl text-center sm:text-left sm:text-4xl text-[#112D35] font-bold  tracking-wider">
               Get charts and actual
-              <span className="image_as_underline ml-2">values</span> of your
+              <span className="image_as_underline mx-2">values</span> of your
               hormones
             </h1>
             <p className="text-sm text-[#112D35] font-medium  tracking-widest leading-7  mt-8">

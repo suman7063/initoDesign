@@ -6,6 +6,7 @@ import Brand from "../components/Brand";
 import Promotion from "../components/Promotion";
 import SimpleSlider from "../components/PredictAndConfirm";
 import TrackEveryThing from "../components/TrackEveryThing";
+import Video from "../components/Video";
 export default function Home() {
   return (
     <div>
@@ -15,6 +16,7 @@ export default function Home() {
        <Promotion />
       <SimpleSlider/>
       <TrackEveryThing/>
+      <Video/>
     </div>
   );
 }

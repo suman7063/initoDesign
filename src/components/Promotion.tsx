@@ -2,7 +2,7 @@ const Promotion = () => {
   return (
     <div className="mt-28 sm:mt-0 px-4 sm:px-0 md:w-[60%] md:mx-auto">
       <h1 className="text-2xl sm:text-4xl text-[#112D35] font-bold w-full sm:w-[550px] text-center mx-auto tracking-wider">
-        The <span className="image_as_underline">only</span> fertility kit you
+        The <span className="image_as_underline mx-2">only</span> fertility kit you
         will ever need
       </h1>
       <p className="text-xs sm:text-sm text-[#112D35] font-medium w-full sm:w-[550px] tracking-widest text-center mx-auto mt-4">
