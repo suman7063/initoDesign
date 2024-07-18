@@ -18,7 +18,7 @@ const PredictAndConfirm = () => {
       <div className="flex flex-col-reverse lg:flex-row">
         {/* Left side of PredictAndConfirm */}
         <div className="lg:bg-[#B4E4F2] rounded-[20px] w-full pl-3 sm:pl-0 sm:w-[400px] h-[445px] sm:mx-auto lg:mx-0">
-        <Slider {...settings}>
+          <Slider {...settings}>
             <Image
               src="https://cdn.inito.com/inito_website/ovulation_confirmed.png"
               alt="hero"
@@ -62,12 +62,11 @@ const PredictAndConfirm = () => {
             <em>exactly</em> when you ovulate, and when is the best time to try
             to conceive.
           </p>
-          <div className="flex w-full justify-center">
-          <button className="w-[70%] mx-auto sm:w-[200px] lg:w-[248px]  h-10  lg:h-[50px] rounded-full bg-[#1F94AA] text-white text-[13px] sm:text-xs lg:text-sm cursor-pointer tracking-wider font-semibold mt-10">
-            HOW DOES INITO WORK?
-          </button>
+          <div className="flex w-full justify-center lg:justify-start">
+            <button className="w-[70%] sm:w-[200px] lg:w-[248px]  h-10  lg:h-[50px] rounded-full bg-[#1F94AA] text-white text-[13px] sm:text-xs lg:text-sm cursor-pointer tracking-wider font-semibold mt-10">
+              HOW DOES INITO WORK?
+            </button>
           </div>
-         
         </div>
       </div>
       {/* end Wrap PredictAndConfirm Part*/}
@@ -100,20 +99,48 @@ const PredictAndConfirm = () => {
             Inito tracks up to 6 fertile days and confirms ovulation by
             measuring all 4 hormones in just 10 minutes:
           </p>
-          <ul >
-        <li className="flex text-sm text-[#112D35] mt-8">
-          <Image src="https://cdn.inito.com/inito_website/tick_1.png" alt="green" width={20} height={20} className="mr-2 "/>Estrogen, which rises 3-4 days before ovulation
-        </li>
-        <li className="flex text-sm text-[#112D35] mt-2">
-          <Image src="https://cdn.inito.com/inito_website/tick_2.png" alt="green" width={20} height={20} className="mr-2"/>LH, which surges 24-36 hours before ovulation
-        </li>
-        <li className="flex text-sm text-[#112D35] mt-2">
-          <Image src="https://cdn.inito.com/inito_website/tick_1.png" alt="green" width={20} height={20} className="mr-2"/> PdG, which rises after ovulation
-        </li>
-        <li className="flex text-sm text-[#112D35] mt-2">
-          <Image src="https://cdn.inito.com/inito_website/tick_2.png" alt="green" width={20} height={20} className="mr-2"/>FSH, to track follicle growth
-        </li>
-      </ul>
+          <ul>
+            <li className="flex text-sm text-[#112D35] mt-8">
+              <Image
+                src="https://cdn.inito.com/inito_website/tick_1.png"
+                alt="green"
+                width={20}
+                height={20}
+                className="mr-2 "
+              />
+              Estrogen, which rises 3-4 days before ovulation
+            </li>
+            <li className="flex text-sm text-[#112D35] mt-2">
+              <Image
+                src="https://cdn.inito.com/inito_website/tick_2.png"
+                alt="green"
+                width={20}
+                height={20}
+                className="mr-2"
+              />
+              LH, which surges 24-36 hours before ovulation
+            </li>
+            <li className="flex text-sm text-[#112D35] mt-2">
+              <Image
+                src="https://cdn.inito.com/inito_website/tick_1.png"
+                alt="green"
+                width={20}
+                height={20}
+                className="mr-2"
+              />{" "}
+              PdG, which rises after ovulation
+            </li>
+            <li className="flex text-sm text-[#112D35] mt-2">
+              <Image
+                src="https://cdn.inito.com/inito_website/tick_2.png"
+                alt="green"
+                width={20}
+                height={20}
+                className="mr-2"
+              />
+              FSH, to track follicle growth
+            </li>
+          </ul>
         </div>
         <Image
           src="https://cdn.inito.com/inito_website/hormones_graph_desktop_v2.png"

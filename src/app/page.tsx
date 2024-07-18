@@ -14,7 +14,7 @@ export default function Home() {
      <Brand/>
        <Promotion />
       <SimpleSlider/>
-     {/*  <TrackEveryThing/> */}
+      <TrackEveryThing/>
     </div>
   );
 }
