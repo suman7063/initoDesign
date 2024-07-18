@@ -1,3 +1,5 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,16 +20,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-.large-img {
-  position: relative;
+  background-color: #fff;
 }
 
 @layer utilities {
@@ -36,7 +29,7 @@ body {
   }
 }
 
-@media screen and (min-device-width: 425px) and (max-device-width: 640px) {
+@media screen and (max-width: 640px) and (min-width: 425px) {
   .small_text {
     font-size: 10px;
   }
@@ -52,41 +45,43 @@ body {
     font-size: 12px;
   }
 }
-
-@media screen and (min-device-width: 640px) and (max-device-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 640px) {
   .backgroundPosition {
     background-position-y: -100px;
   }
   .large-img {
+    position: relative;
     width: 530px;
     left: 0px;
     top: 0px;
   }
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 767px) {
   .backgroundPosition {
     background-position-y: -120px;
   }
   .large-img {
+    position: relative;
     width: 530px;
     left: 0px;
     top: 0px;
   }
 }
 
-@media screen and (min-device-width: 1023px) and (max-device-width: 1279px) {
+@media screen and (max-width: 1279px) and (min-width: 1023px) {
   .backgroundPosition {
     background-position-y: -230px;
   }
   .large-img {
+    position: relative;
     width: 528px;
     left: 0px;
     top: -30px;
   }
 }
 
-@media screen and (min-device-width: 1280px) and (max-device-width: 1535px) {
+@media screen and (max-width: 1535px) and (min-width: 1280px) {
   .backgroundPosition {
     background-position-y: -200px;
   }
@@ -97,9 +92,10 @@ body {
     top: -20px;
   }
 }
-@media screen and (min-device-width: 1536px) {
+
+@media screen and (min-width: 1536px) {
   .backgroundPosition {
-    background-position-y: -520px;
+    background-position-y: -350px;
   }
   .large-img {
     position: absolute;
@@ -107,4 +103,27 @@ body {
     top: -90px;
     width: 850px;
   }
+}
+
+.image_as_underline {
+  box-sizing: border-box;
+  background-image: url("https://cdn.inito.com/inito_website/plain_underline.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.an-egg {
+  display: inline-block;
+  position: relative;
+  margin-left: 16px;
+}
+.text-image {
+  width: 200px;
+  position: absolute;
+  bottom: 20px;
+}
+.strike-through {
+  width: 108px;
+  height: 15px;
+  margin-top: -24px;
 }
