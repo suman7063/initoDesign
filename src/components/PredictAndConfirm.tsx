@@ -8,7 +8,7 @@ const PredictAndConfirm = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1000,
     arrows: false,
   };
@@ -52,7 +52,7 @@ const PredictAndConfirm = () => {
             Predict and confirm your ovulation with{" "}
             <span className="image_as_underline mx-2">actual</span> data
           </h1>
-          <p className="sm:text-xl lg:text-sm text-[#112D35] font-medium  tracking-widest leading-7  mt-8">
+          <p className="sm:text-xl lg:text-lg text-[#112D35] font-medium  tracking-widest leading-7  mt-8">
             Unlike most ovulation tests that only give you `yes/no` results,
             Inito provides <strong>real numerical values</strong> of your
             fertility hormones.
@@ -95,12 +95,12 @@ const PredictAndConfirm = () => {
             </span>
             again with Inito
           </h1>
-          <p className="text-sm text-[#112D35] font-medium  tracking-widest leading-5  mt-4">
+          <p className="text-sm lg:text-lg text-[#112D35] font-medium  tracking-widest leading-5  mt-4">
             Inito tracks up to 6 fertile days and confirms ovulation by
             measuring all 4 hormones in just 10 minutes:
           </p>
           <ul>
-            <li className="flex text-sm text-[#112D35] mt-8">
+            <li className="flex text-sm lg:text-lg lg:text-lg text-[#112D35] mt-8">
               <Image
                 src="https://cdn.inito.com/inito_website/tick_1.png"
                 alt="green"
@@ -110,7 +110,7 @@ const PredictAndConfirm = () => {
               />
               Estrogen, which rises 3-4 days before ovulation
             </li>
-            <li className="flex text-sm text-[#112D35] mt-2">
+            <li className="flex text-sm lg:text-lg text-[#112D35] mt-2">
               <Image
                 src="https://cdn.inito.com/inito_website/tick_2.png"
                 alt="green"
@@ -120,7 +120,7 @@ const PredictAndConfirm = () => {
               />
               LH, which surges 24-36 hours before ovulation
             </li>
-            <li className="flex text-sm text-[#112D35] mt-2">
+            <li className="flex text-sm lg:text-lg text-[#112D35] mt-2">
               <Image
                 src="https://cdn.inito.com/inito_website/tick_1.png"
                 alt="green"
@@ -130,7 +130,7 @@ const PredictAndConfirm = () => {
               />{" "}
               PdG, which rises after ovulation
             </li>
-            <li className="flex text-sm text-[#112D35] mt-2">
+            <li className="flex text-sm lg:text-lg text-[#112D35] mt-2">
               <Image
                 src="https://cdn.inito.com/inito_website/tick_2.png"
                 alt="green"

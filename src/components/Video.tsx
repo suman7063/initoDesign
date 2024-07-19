@@ -60,7 +60,8 @@ const Video = () => {
                 muted="muted"
                 oncontextmenu="return false"
                 alt={`Video: Dip test strip in urine ${data.id}`}
-                playsinline="true"
+                // @ts-ignore
+                playsInline="true"
                 src={data.link}
               />
               <div className="md:hidden bg-[#BDE0E6] w-12 h-12 rounded-full flex justify-center items-center absolute top-[-24px] left-[24px]">

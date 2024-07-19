@@ -75,7 +75,7 @@ const TopHeader = () => {
               Careers
             </Link>
           </div>
-          <button className="w-[110px] h-[35px] sm:w-[120px] sm:h-[35px] md:w-[130px] md:h-[40px] rounded-full bg-[#1F94AA] text-white text-[13px] sm:text-sm cursor-pointer ml-6 tracking-wider">
+          <button className="w-[110px] h-[35px] sm:w-[120px] sm:h-[35px] md:w-[130px] md:h-[40px] rounded-full bg-[#1F94AA] text-white text-[13px] sm:text-sm lg:text-lg cursor-pointer ml-6 tracking-wider">
             Try Inito
           </button>
         </div>
