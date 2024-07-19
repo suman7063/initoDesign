@@ -58,7 +58,7 @@ const AskQuestion = () => {
   };
 
   return (
-    <div className="text-center sm:max-w-[1024px] md:m-auto md:w-[90%]">
+    <div className="text-center max-w-[1024px] md:m-auto md:w-[90%]">
       {/* <h1 className="text-2xl text-center sm:text-left sm:text-4xl text-[#112D35] font-bold  tracking-wider">
       Your top questions answered
             </h1> */}

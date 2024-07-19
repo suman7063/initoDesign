@@ -1,3 +1,4 @@
+"use client"
 const videoData = [
   {
     id: 1,
@@ -22,10 +23,10 @@ const videoData = [
 ];
 const Video = () => {
   return (
-    <div className="w-full box-border sm:max-w-[1024px] mx-auto px-4 sm:px-0 py-8 md:flex justify-between items-center">
+    <div className="w-full box-border max-w-[1024px] mx-auto px-4 sm:px-0 py-8 md:flex justify-between items-center">
       {/* Left part */}
-      <div className="w-full md:w-[400px] text-center md:text-left">
-        <h1 className="text-2xl mx-auto md:text-4xl text-[#112D35] font-bold  tracking-wider w-[300px]  md:w-[350px]">
+      <div className="w-full md:w-[350px] lg:w-[400px] text-center md:text-left">
+        <h1 className="text-2xl mx-auto lg:text-4xl text-[#112D35] font-bold  tracking-wider w-[300px]  md:w-[350px]">
           A<span className="image_as_underline mx-2">fertility lab</span> at your
           fingertips
         </h1>
@@ -49,21 +50,36 @@ const Video = () => {
         {videoData.map((data) => {
           return (
             <div className="rounded-3xl w-[80%] mx-auto md:w-[242px] relative" key={data.id}>
-              <video
+              {/* <video
                 className="rounded-3xl w-[80%] mx-auto"
                 width={242}
                 height={242}
-                autoplay="autoplay"
+                // @ts-ignore
+                autoPlay="autoplay"
                 // @ts-ignore
                 loop="loop"
                 // @ts-ignore
-                muted="muted"
-                oncontextmenu="return false"
+                muted={true}
+                // @ts-ignore
+                onContextMenu={false}
                 alt={`Video: Dip test strip in urine ${data.id}`}
                 // @ts-ignore
-                playsInline="true"
+                playsInline={true}
                 src={data.link}
-              />
+              /> */}
+              <video
+  className="rounded-3xl w-[80%] mx-auto"
+  width={242}
+  height={242}
+  autoPlay
+  loop
+  muted
+  onContextMenu={(e) => e.preventDefault()}  // Prevent the context menu from appearing
+  playsInline
+  src={data.link}
+  aria-label={`Video: Dip test strip in urine ${data.id}`}
+  title={`Video: Dip test strip in urine ${data.id}`}
+/>
               <div className="md:hidden bg-[#BDE0E6] w-12 h-12 rounded-full flex justify-center items-center absolute top-[-24px] left-[24px]">
                   {data.id}
                 </div>

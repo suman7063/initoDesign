@@ -4,7 +4,7 @@ import Image from "next/image";
 const TopCover = () => {
   return (
     <div className=" relative top-[60px] sm:top-[80px] w-full sm:h-[600px]  lg:h-[850px] xl:h-[900px] 2xl:h-[975px]  bg-cover bg-no-repeat z-10  sm:bg-transparent sm:bg-[url('https://cdn.inito.com/inito_website/v2_main_hero_background.png')] backgroundPosition">
-      <div className="w-full box-border sm:max-w-[1024px] sm:mx-auto  sm:flex justify-between bg-[#C4F2FF] sm:bg-transparent sm:px-4 relative">
+      <div className="w-full box-border max-w-[1024px] sm:mx-auto  sm:flex justify-between bg-[#C4F2FF] sm:bg-transparent sm:px-4 relative">
         <div className="sm:w-1/2">
           <div className="w-full px-4 sm:px-0 pt-8 sm:pt-8 lg:pt-24 2xl:pt-32">
             <div className="flex items-center">

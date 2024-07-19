@@ -13,7 +13,7 @@ const PredictAndConfirm = () => {
     arrows: false,
   };
   return (
-    <div className="w-full box-border sm:max-w-[1024px] bg-[#B4E4F2] lg:bg-[#E1F4FA] lg:rounded-[20px] mx-auto mt-16 sm:py-8 lg:p-8 ">
+    <div className="w-full box-border max-w-[1024px] bg-[#B4E4F2] lg:bg-[#E1F4FA] lg:rounded-[20px] mx-auto mt-16 sm:py-8 lg:p-8 ">
       {/* Start Wrap PredictAndConfirm Part*/}
       <div className="flex flex-col-reverse lg:flex-row">
         {/* Left side of PredictAndConfirm */}
